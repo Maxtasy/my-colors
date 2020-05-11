@@ -1,0 +1,89 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.color-item {
+    cursor: pointer;
+    width: 100px;
+    height: 400px;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+}
+
+.color-item .tooltip-text {
+    font-size: .75rem;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-item:hover .tooltip-text {
+    display: block;
+}
+
+.color-item:hover, .color-item::after {
+    display: block;
+}
+
+.white {
+    background-color: white;
+}
+
+.greyscale1 {
+    background-color: #D9D9D9;
+    color: #0D0D0D;
+}
+
+.greyscale2 {
+    background-color: #A6A6A6;
+    color: #262626;
+}
+
+.greyscale3 {
+    background-color: #595959;
+}
+
+.greyscale4 {
+    background-color: #262626;
+    color: #A6A6A6;
+}
+
+.greyscale5 {
+    background-color: #0D0D0D;
+    color: #D9D9D9;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.highlight-red {
+    background-color: #962D3E;
+}
+
+.highlight-blue {
+    background-color: #348899;
+}
