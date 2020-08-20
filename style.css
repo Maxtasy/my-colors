@@ -6,19 +6,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     height: 100vh;
-    background-color: black;
+    background-color: #0D0D0D;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
-    color: white;
+.headline {
+    font-family: 'Bungee', cursive;
+    color: #962D3E;
 }
 
 .flex-container {
     display: flex;
+    margin-bottom: 5vmin;
 }
 
 .color-item {
@@ -31,6 +33,7 @@ h1 {
 }
 
 .color-item .tooltip-text {
+    font-family: 'Montserrat', sans-serif;
     font-size: .75rem;
     display: none;
     position: absolute;
@@ -43,47 +46,79 @@ h1 {
     display: block;
 }
 
-.color-item:hover, .color-item::after {
-    display: block;
+[data-color-code="#FFFFFF"] {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
-.white {
-    background-color: white;
+[data-color-code="#F3F3F3"] {
+    background-color: #F3F3F3;
+    color: #0D0D0D;
 }
 
-.greyscale1 {
+[data-color-code="#D9D9D9"] {
     background-color: #D9D9D9;
     color: #0D0D0D;
 }
 
-.greyscale2 {
+[data-color-code="#A6A6A6"] {
     background-color: #A6A6A6;
     color: #262626;
 }
 
-.greyscale3 {
+[data-color-code="#595959"] {
     background-color: #595959;
 }
 
-.greyscale4 {
+[data-color-code="#262626"] {
     background-color: #262626;
     color: #A6A6A6;
 }
 
-.greyscale5 {
+[data-color-code="#0D0D0D"] {
     background-color: #0D0D0D;
     color: #D9D9D9;
 }
 
-.black {
-    background-color: black;
-    color: white;
+[data-color-code="#000000"] {
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
-.highlight-red {
+[data-color-code="#962D3E"] {
     background-color: #962D3E;
 }
 
-.highlight-blue {
+[data-color-code="#348899"] {
     background-color: #348899;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    margin: 1em;
+    border-radius: 100vmax;
+}
+
+.btn-primary {
+    background-color: #348899;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #247383;
+}
+
+.btn-secondary {
+    background-color: #F3F3F3;
+    color: #262626;
+}
+
+.btn-secondary:hover {
+    background-color: #d1d1d1;
 }
